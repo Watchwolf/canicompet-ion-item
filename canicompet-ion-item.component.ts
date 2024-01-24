@@ -13,6 +13,7 @@ export class CanicompetIonItemComponent  implements OnInit {
   @Input() color: string = 'default'
   @Input() target: string = ''
   @Input() href: string = ''
+  @Input() routerLink
 
   constructor() { }
 
