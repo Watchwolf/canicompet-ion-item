@@ -21,4 +21,7 @@ export class CanicompetIonItemComponent  implements OnInit {
 
   ngOnInit() {}
 
+  ionViewWillEnter() {
+  }
+
 }
