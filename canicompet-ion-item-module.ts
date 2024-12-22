@@ -15,6 +15,7 @@ import {RouterModule} from '@angular/router';
     IonicModule,
     TranslateModule,
     RouterModule,
+    
   ],
   exports: [
     CanicompetIonItemComponent
