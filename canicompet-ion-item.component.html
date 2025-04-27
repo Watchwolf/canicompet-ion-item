@@ -1,11 +1,17 @@
 <a class="hideStyle" [target]="target" [routerLink]="routerLink" *ngIf="routerLink">
-  <ion-item button [lines]="lines" [class]="ionItemClass" [color]="color">
+  <ion-item button [lines]="lines" [class]="ionItemClass" [color]="color" *ngIf="displayButton">
+    <ng-container *ngTemplateOutlet="contentTpl"></ng-container>
+  </ion-item>
+  <ion-item [lines]="lines" [class]="ionItemClass" [color]="color" *ngIf="!displayButton">
     <ng-container *ngTemplateOutlet="contentTpl"></ng-container>
   </ion-item>
 </a>
 
 <a class="hideStyle" [target]="target" [href]="href" *ngIf="!routerLink">
-  <ion-item button [lines]="lines" [class]="ionItemClass" [color]="color">
+  <ion-item button [lines]="lines" [class]="ionItemClass" [color]="color" *ngIf="displayButton">
+    <ng-container *ngTemplateOutlet="contentTpl"></ng-container>
+  </ion-item>
+  <ion-item [lines]="lines" [class]="ionItemClass" [color]="color" *ngIf="!displayButton">
     <ng-container *ngTemplateOutlet="contentTpl"></ng-container>
   </ion-item>
 </a>

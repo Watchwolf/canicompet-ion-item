@@ -16,6 +16,7 @@ export class CanicompetIonItemComponent  implements OnInit {
   @Input() target: string = ''
   @Input() href: string = ''
   @Input() routerLink
+  @Input() displayButton: boolean = true
 
   constructor() { }
 
